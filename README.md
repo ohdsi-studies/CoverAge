@@ -12,7 +12,7 @@
 ])**
 - Study start date: **15 September 2020**
 - Study end date: **-**
-- Protocol: **-**
+- Study Protocol: **(https://github.com/ohdsi-studies/CoverAge/blob/master/PLP_protocol_young_2020_09_23.pdf)**
 - Publications: **-**
 - Results explorer: **-**
 
