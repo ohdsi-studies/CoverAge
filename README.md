@@ -19,5 +19,4 @@
 [Description]
 Development and validation of patient-level prediction models for hospitalization and death amongst young patients presenting with a clinical diagnosis or positive test for COVID-19: a rapid network study to inform the management of COVID-19
 
-[Study Protocol]
 
