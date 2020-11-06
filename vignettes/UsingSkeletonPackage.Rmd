@@ -34,7 +34,7 @@ This vignette describes how one can use the package skeleton for patient-level p
 The package skeleton currently implements an examplar study, predicting various outcomes in multiple target populations. If desired (as a test), one can run the package as is. 
 
 ## Open the project in Rstudio
-Make sure to have RStudio installed.  Then open the R project downloaded from ATLAS by decompressing the downloaded folder and clicking on the <coverAge>.Rproj file (where <coverAge> is replaced by the study name you specified in ATLAS).  This should open an RStudio session.
+Make sure to have RStudio installed.  Then open the R project downloaded from ATLAS by decompressing the downloaded folder and clicking on the <CoverAge>.Rproj file (where <CoverAge> is replaced by the study name you specified in ATLAS).  This should open an RStudio session.
 
 
 ## Installing all package dependencies 
@@ -45,7 +45,7 @@ source('./extras/packageDeps.R')
 ```
 
 ## Building the package
-Once you have the dependencies installed you can now build the R package.  This creates a library you can load to run the prediction study.  To build the package click 'Build' on the top right hand side tab menu (there are tabs: 'Environment', 'History', 'Connections', 'Build', 'Git').  Once in 'Build' click the 'Install and Restart' button.  This will now build your package and create the R library.  If it succeeds you will see '* DONE (<coverAge>)', if it fails you will see red output and the library may not be created.  Please report an issue to: https://github.com/OHDSI/PatientLevelPrediction/issues if your library does not get created.
+Once you have the dependencies installed you can now build the R package.  This creates a library you can load to run the prediction study.  To build the package click 'Build' on the top right hand side tab menu (there are tabs: 'Environment', 'History', 'Connections', 'Build', 'Git').  Once in 'Build' click the 'Install and Restart' button.  This will now build your package and create the R library.  If it succeeds you will see '* DONE (<CoverAge>)', if it fails you will see red output and the library may not be created.  Please report an issue to: https://github.com/OHDSI/PatientLevelPrediction/issues if your library does not get created.
 
 ## Running the package
 
@@ -114,7 +114,7 @@ To create a new R package that can be used to externally validate the models you
     createValidationPackage = T  
     #analysesToValidate = 1
 ```
-If you do not set analysesToValidate then all the developed models will be transproted into the validation R package.  To restrict to Analysis 1 and 5 models set: `analysesToValidate = c(1,5)`.  The validation package will be found in your outputFolder directory with the same name as your prediction package but with Validation appended (e.g., outputFolder/<coverAge>Validation).  You can add this valdiation package directory to the studyProtocol on the OHDSI github to share the model with other collaborators. 
+If you do not set analysesToValidate then all the developed models will be transproted into the validation R package.  To restrict to Analysis 1 and 5 models set: `analysesToValidate = c(1,5)`.  The validation package will be found in your outputFolder directory with the same name as your prediction package but with Validation appended (e.g., outputFolder/<CoverAge>Validation).  You can add this valdiation package directory to the studyProtocol on the OHDSI github to share the model with other collaborators. 
 
 Once you run the study you can view the results via a local shiny app by running:
 ```{r eval=FALSE}

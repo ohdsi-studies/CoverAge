@@ -1502,6 +1502,7 @@
             }},
             "Occurrence": {
               "Type": 0,
+              "CountColumn": null,
               "IsDistinct": false,
               "Count": 0
             }
@@ -1540,6 +1541,7 @@
             }},
             "Occurrence": {
               "Type": 0,
+              "CountColumn": null,
               "IsDistinct": false,
               "Count": 0
             }
@@ -1589,6 +1591,7 @@
             }},
             "Occurrence": {
               "Type": 0,
+              "CountColumn": null,
               "IsDistinct": false,
               "Count": 0
             }
@@ -1638,6 +1641,7 @@
             }},
             "Occurrence": {
               "Type": 0,
+              "CountColumn": null,
               "IsDistinct": false,
               "Count": 0
             }
@@ -1675,6 +1679,7 @@
             }},
             "Occurrence": {
               "Type": 0,
+              "CountColumn": null,
               "IsDistinct": false,
               "Count": 0
             }
@@ -1715,6 +1720,7 @@
             }},
             "Occurrence": {
               "Type": 0,
+              "CountColumn": null,
               "IsDistinct": false,
               "Count": 0
             }
@@ -1752,6 +1758,7 @@
             }},
             "Occurrence": {
               "Type": 0,
+              "CountColumn": null,
               "IsDistinct": false,
               "Count": 0
             }
@@ -1789,6 +1796,7 @@
             }},
             "Occurrence": {
               "Type": 0,
+              "CountColumn": null,
               "IsDistinct": false,
               "Count": 0
             }
@@ -1866,6 +1874,7 @@
           }},
           "Occurrence": {
             "Type": 2,
+            "CountColumn": null,
             "IsDistinct": false,
             "Count": 1
           }

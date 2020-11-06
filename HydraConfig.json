@@ -5,11 +5,11 @@
   "actions":[{
     "type": "fileNameFindAndReplace",
     "input": "packageName",
-    "find": "coverAge"
+    "find": "CoverAge"
   },{
     "type": "stringFindAndReplace",
     "input": "packageName",
-    "find": "coverAge"
+    "find": "CoverAge"
   },{
     "type": "jsonArrayToCsv",
     "input": "cohortDefinitions",

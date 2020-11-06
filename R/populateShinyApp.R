@@ -6,8 +6,8 @@ populateShinyApp <- function(outputDirectory = './ShinyApp',
                              databaseName = 'sharable name of development data'){
   
   #check inputs
-  if(missing(shinyDirectory)){
-    shinyDirectory <- system.file("shiny", "PLPViewer", package = "coverAge")
+  if(missing(shinyDirectory) || !dir.exists(shinyDirectory)){
+    shinyDirectory <- system.file("shiny", "PLPViewer", package = "CoverAge")
   }
   if(missing(resultDirectory)){
     stop('Need to enter the resultDirectory')
@@ -28,6 +28,9 @@ populateShinyApp <- function(outputDirectory = './ShinyApp',
   
   outputDirectory <- file.path(outputDirectory,'data')
   #outputDirectory <- file.path(shinyDirectory,'data')
+  if(!dir.exists(outputDirectory)) {
+    dir.create(outputDirectory, recursive = T)
+  }
   
   # copy the settings csv
   file <- utils::read.csv(file.path(resultDirectory,'settings.csv'))

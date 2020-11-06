@@ -9,7 +9,7 @@ createPlpProtocol <- function(outputLocation = getwd()){
   
   predictionAnalysisListFile <- system.file("settings",
                                             "predictionAnalysisList.json",
-                                            package = "coverAge")
+                                            package = "CoverAge")
   
   #figure1 <- 'vignettes/Figure1.png'
   figure1 <- system.file("doc",

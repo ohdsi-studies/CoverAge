@@ -1,6 +1,6 @@
 # Copyright 2018 Observational Health Data Sciences and Informatics
 #
-# This file is part of coverAge
+# This file is part of CoverAge
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 #' Execute the Study
 #'
 #' @details
-#' This function executes the coverAge Study.
+#' This function executes the CoverAge Study.
 #' 
 #' @param connectionDetails    An object of type \code{connectionDetails} as created using the
 #'                             \code{\link[DatabaseConnector]{createConnectionDetails}} function in the
@@ -130,7 +130,7 @@ execute <- function(connectionDetails,
     ParallelLogger::logInfo("Running predictions")
     predictionAnalysisListFile <- system.file("settings",
                                               "predictionAnalysisList.json",
-                                              package = "coverAge")
+                                              package = "CoverAge")
     predictionAnalysisList <- PatientLevelPrediction::loadPredictionAnalysisList(predictionAnalysisListFile)
     predictionAnalysisList$connectionDetails = connectionDetails
     predictionAnalysisList$cdmDatabaseSchema = cdmDatabaseSchema
@@ -162,7 +162,7 @@ execute <- function(connectionDetails,
   if(createValidationPackage){
     predictionAnalysisListFile <- system.file("settings",
                                               "predictionAnalysisList.json",
-                                              package = "coverAge")
+                                              package = "CoverAge")
     jsonSettings <-  tryCatch({Hydra::loadSpecifications(file=predictionAnalysisListFile)},
                               error=function(cond) {
                                 stop('Issue with json file...')
@@ -190,7 +190,7 @@ execute <- function(connectionDetails,
   if(createJournalDocument){
     predictionAnalysisListFile <- system.file("settings",
                                               "predictionAnalysisList.json",
-                                              package = "coverAge")
+                                              package = "CoverAge")
     jsonSettings <-  tryCatch({Hydra::loadSpecifications(file=predictionAnalysisListFile)},
                               error=function(cond) {
                                 stop('Issue with json file...')

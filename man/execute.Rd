@@ -79,7 +79,7 @@ in packaged results.}
 Execute the Study
 }
 \details{
-This function executes the coverAge Study.
+This function executes the CoverAge Study.
 }
 \examples{
 \dontrun{

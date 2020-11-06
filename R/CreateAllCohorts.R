@@ -59,7 +59,7 @@ createCohorts <- function(connectionDetails,
   # Check number of subjects per cohort:
   ParallelLogger::logInfo("Counting cohorts")
   sql <- SqlRender::loadRenderTranslateSql("GetCounts.sql",
-                                           "coverAge",
+                                           "CoverAge",
                                            dbms = connectionDetails$dbms,
                                            oracleTempSchema = oracleTempSchema,
                                            cdm_database_schema = cdmDatabaseSchema,
@@ -74,7 +74,7 @@ createCohorts <- function(connectionDetails,
 }
 
 addCohortNames <- function(data, IdColumnName = "cohortDefinitionId", nameColumnName = "cohortName") {
-  pathToCsv <- system.file("settings", "CohortsToCreate.csv", package = "coverAge")
+  pathToCsv <- system.file("settings", "CohortsToCreate.csv", package = "CoverAge")
   cohortsToCreate <- utils::read.csv(pathToCsv)
   
   idToName <- data.frame(cohortId = c(cohortsToCreate$cohortId),
